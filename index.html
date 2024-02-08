@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>het</h1>
+
+    <!-- Tip Count Calculator -->
+    <h1>Tip Count Calculator</h1>
+    <!-- calculator begins -->
+    <div class="calculator">
+        <div class="form">
+            <!-- input section of customer -->
+            <label for="cname">Customer Name</label>
+            <input type="text" id="cname" oninput="changename()" placeholder="Enter Customer Name">
+            <label for="peoples">No Of Peoples</label>
+            <input type="number" id="peoples" oninput="changename()" placeholder="Enter The No Of Peoples">
+            <!-- input section of tip given by customer -->
+            <div class="tip">
+                <p>Select Percentage %</p>
+                <div class="customtip">
+                    <p  onclick="change_percentage('1')">1 %</p>
+                    <p  onclick="change_percentage('5')">5 %</p>
+                    <p  onclick="change_percentage('10')">10 %</p>
+                    <p  onclick="change_percentage('15')">15 %</p>
+                </div>
+                <input type="number" id="inputtip" onchange="changename()" placeholder="Input Custom Tip %">
+            </div>
+            <!-- input adding items by the customer -->
+            <div class="additem">
+                <p>Add Item</p>
+                <div>
+                    <input type="text" placeholder="Item Name" id="iname">
+                    <input type="number" placeholder="Item Quantity" id="iqty">
+                    <input type="number" placeholder="Item Price" id="iprice">
+                </div>
+                <button onclick="additem()">Add</button>
+            </div>
+        </div>
+        <!-- This Is Bill Section -->
+        <div class="bill">
+            <!-- customer's Name -->
+            <div class="s1">
+                <label for="name">Customer Name</label>
+                <p id="nameval">--</p>
+            </div>
+            <div class="s1">
+                <!-- How Many No Of Customers -->
+                <label for="">Numbers Of People</label>
+                <p id="peopleval">--</p>
+            </div>
+            <!-- This Is Items Section -->
+            <div class="s2">
+                <h2>Items</h2>
+                <div class="headings">
+                    <p>Quantity</p>
+                    <p>Item Name</p>
+                    <p>Price</p>
+                </div>
+                <div id="allitem">
+                    <!-- <div class="s1">
+                        <p>3</p>
+                        <p>shoes</p>
+                        <p>Rs. 1000</p>
+                    </div> -->
+                </div>
+            </div>
+            <!-- This Is Bill And Tip Amount Section -->
+            <div class="s1">
+                <p>Bill Amount</p>
+                <p id="billamt">Rs. 0</p>
+            </div>
+            <div class="s1">
+                <p>Tip %</p>
+                <p id="tipval">0 %</p>
+            </div>
+            <!-- Total Payable Amount -->
+            <div class="s1">
+                <label for="">Total Amount</label>
+                <p id="totalamt">Rs. 0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/calc.js"></script>
 </body>
+
 </html>

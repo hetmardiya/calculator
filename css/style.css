@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.385);
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 15px;
+}
+
+.form label{
+    align-self: flex-start;
+}
+
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin: 10px 0px;
+    width: 95%;
+    align-self: flex-end;
+}
+
+h1{
+    margin: 15px 0px;
+}
+
+.tip{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.364);
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tip .customtip {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.tip .customtip p , .additem button {
+    /* flex: 1; */
+    border-radius: 15px;
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    background-color: rgba(215, 223, 250, 0.468);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.s2 .headings{
+    display: flex;
+    justify-content: space-around;
+    /* width: 100%; */
+    padding: 10px 0px;
+}
+
+body {
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+
+.additem button{
+    font-family: 'Protest Guerrilla', sans-serif;
+    color: white;
+    font-size: larger;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.additem {
+    border: 2px dashed white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.calculator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bill{
+    background-color: rgb(245, 245, 220);
+    width: 600px;
+    margin: 20px;
+}
+
+.s1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 3px dotted black;
+    align-items: center;
+}
+
+.s2 h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.s1 label{
+    font-size: x-large;
+    margin-right: 20px;
+    font-weight: 500px;
+}
+
+#allitem{
+    margin-bottom: 30px;
+}
+
+#allitem .s1{
+    display: flex;
+    justify-content: space-around;
+}
